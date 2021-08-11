@@ -6,8 +6,8 @@
 
 @font-face {
     font-family: 'sf-pro-display';
-    src: url('../fonts/SF-Pro-Display-Bold.woff2') format('woff2'),
-         url('../fonts/SF-Pro-Display-Bold.woff') format('woff');
+    src: url('../fonts/SF-Pro-Display-Regular.woff2') format('woff2'),
+         url('../fonts/SF-Pro-Display-Regular.woff') format('woff');
     font-style: normal;
     font-weight: normal;
     font-display: swap;
@@ -24,8 +24,8 @@
 
 @font-face {
     font-family: 'spaceagecyrillic';
-    src: url('../fonts/spaceagecyrillic-regular.woff) format('woff'),
-         url('../fonts/spaceagecyrillic-regular.ttf') format('ttf');
+    src: url('../fonts/spaceagecyrillic-regular.woff2') format('woff2'),
+         url('../fonts/spaceagecyrillic-regular.woff') format('woff');
     font-style: normal;
     font-weight: normal;
     font-display: swap;
@@ -33,17 +33,18 @@
 
 a {
     color: inherit;
-    text-transform: none;
+    text-decoration: none;
 }
 
 button {
     border: none;
     background-color:transparent;
     cursor: pointer;
+    color: inherit;
 }
 
 body {
-    font-family: sf-pro-display;
+    font-family: 'sf-pro-display';
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
@@ -123,4 +124,42 @@ body {
 
 .header__title span {
     font-size: 110px;
+}
+
+
+.header__text { 
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header__btn {
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 15px 10px 16px;
+}
+
+.header__description {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-bottom: 5%;
+
+
+}
+
+.header__descrition-text {
+    width: 165px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.header__descrition-text + .header__descrition-text {
+    
 }
